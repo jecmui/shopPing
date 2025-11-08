@@ -1,0 +1,11 @@
+{
+  "name": "api-scripts",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "setup": "python -m venv .venv && .\\.venv\\Scripts\\pip.exe install --upgrade pip && .\\.venv\\Scripts\\pip.exe install -r requirements.txt",
+    "setup:unix": "python -m venv .venv && . ./.venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt",
+    "migrate": "python manage.py migrate --noinput",
+    "dev": "python manage.py runserver 0.0.0.0:8000"
+  }
+}
