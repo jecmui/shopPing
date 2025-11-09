@@ -48,3 +48,13 @@ This project was created for UB Hacking 2025.
    pnpm dev
    ```
    Frontend runs at http://localhost:5173/
+
+### Cleanup
+
+1. **Clean up Postgres**
+   ```bash
+   docker compose down -v
+   ```
+
+2. **Clean up api/web**
+   Interrupt the active processes using CTRL+C (Windows) or Command+. (macOS)
