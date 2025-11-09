@@ -3,13 +3,12 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./index.css";
 import Home from "./Home";
+import Navbar from "./components/Navbar";
 
 function App(){
   return (
     <BrowserRouter>
-      <nav className="p-4 bg-slate-100">
-        <Link className="mr-4" to="/">Home</Link>
-      </nav>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
       </Routes>
